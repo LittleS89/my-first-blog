@@ -25,7 +25,14 @@
                             </time>
                             <h2><a href="">{{ post.title }}</a></h2>
                             <p>{{ post.text|linebreaksbr }}</p>
-                        </article>
+                        </article class="post">
+                            <time class="date">
+                                {{ post.published_date }}
+                            </time>
+                            <h2><a href="">{{ post.title }} My first post</a></h2>
+                            <p>{{ post.text|linebreaksbr }} Oh man, it's my first post! Holy cow. Totally awesome. This is so amazing. Alakazam! You're reading my first post!!</p>
+                        </article class="post">
+        
                     {% endfor %}
                 </div>
             </div>
