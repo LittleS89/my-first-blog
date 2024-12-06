@@ -4,7 +4,7 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 
-Post.objects.get(pk=pk)
+# Post.objects.get(pk=pk)
 
 # Create your views here.
 def post_list(request):
